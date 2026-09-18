@@ -227,7 +227,7 @@ export default function App() {
         {['identificacao', 'sucesso', 'gps'].includes(passo) && (
           <div className="flex justify-center mb-6">
             <img 
-              src="/logoponto2.png" 
+              src="/LOGOPONTO.png" 
               alt="JJT Ponto" 
               className="w-24 h-24 object-cover rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.5)] border border-gray-700" 
             />
