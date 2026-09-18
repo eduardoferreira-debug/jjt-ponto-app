@@ -224,22 +224,22 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#0B1120] flex flex-col justify-center items-center p-4">
       <div className="max-w-sm w-full bg-[#111827] rounded-3xl shadow-2xl border border-gray-800 p-8 overflow-hidden relative">
+        
+        {/* LOGOTIPO AUMENTADO */}
         {['identificacao', 'sucesso', 'gps'].includes(passo) && (
-          <div className="flex justify-center mb-6">
+          <div className="flex justify-center mb-2 mt-4">
             <img 
               src="/LOGOPONTO.png" 
-              alt="JJT Ponto" 
-              className="w-24 h-24 object-cover rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.5)] border border-gray-700" 
+              alt="JJT Registo de Ponto" 
+              className="w-48 h-48 sm:w-56 sm:h-56 object-contain" 
             />
           </div>
         )}
 
         {passo === 'identificacao' && (
           <div className="animate-in fade-in zoom-in-95 duration-300">
-            <h2 className="text-center text-2xl font-bold text-white mb-2">
-              JJT Ponto
-            </h2>
-            <p className="text-center text-sm text-gray-400 mb-8">
+            {/* Título textual removido, mantendo apenas a instrução */}
+            <p className="text-center text-sm text-gray-400 mb-8 mt-2">
               Insere o teu NIF para iniciar a validação.
             </p>
             <form onSubmit={identificarTrabalhador} className="space-y-6">

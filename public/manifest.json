@@ -1,15 +1,22 @@
 {
-  "name": "JJT Registo de Ponto",
+  "name": "JJT Ponto",
   "short_name": "JJT Ponto",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0B1120",
-  "theme_color": "#2563EB",
+  "theme_color": "#0B1120",
   "icons": [
+    {
+      "src": "/LOGORP.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
     {
       "src": "/LOGOPONTO.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
