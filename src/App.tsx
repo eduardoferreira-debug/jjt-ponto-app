@@ -137,7 +137,7 @@ export default function App() {
           setPasso('identificacao');
         }
       },
-      (error) => {
+      () => {
         setErro(
           'Tens de dar permissão de Localização ao browser para picar o ponto!'
         );
@@ -192,7 +192,7 @@ export default function App() {
       const blob = await res.blob();
       const nomeFicheiro = `${funcionario.id}_${Date.now()}.jpg`;
 
-      const { data: uploadData, error: uploadError } = await supabase.storage
+      const { error: uploadError } = await supabase.storage
         .from('fotos_ponto')
         .upload(nomeFicheiro, blob, { contentType: 'image/jpeg' });
 
