@@ -9,6 +9,7 @@ import {
   Camera,
   RefreshCw,
 } from 'lucide-react';
+import { InstallPWABanner } from './InstallPWABanner';
 
 function calcularDistancia(
   lat1: number,
@@ -238,7 +239,6 @@ export default function App() {
 
         {passo === 'identificacao' && (
           <div className="animate-in fade-in zoom-in-95 duration-300">
-            {/* Título textual removido, mantendo apenas a instrução */}
             <p className="text-center text-sm text-gray-400 mb-8 mt-2">
               Insere o teu NIF para iniciar a validação.
             </p>
@@ -396,6 +396,9 @@ export default function App() {
           </div>
         )}
       </div>
+
+      {/* BANNER DE INSTALAÇÃO PWA */}
+      <InstallPWABanner />
     </div>
   );
 }
