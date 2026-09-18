@@ -226,7 +226,11 @@ export default function App() {
       <div className="max-w-sm w-full bg-[#111827] rounded-3xl shadow-2xl border border-gray-800 p-8 overflow-hidden relative">
         {['identificacao', 'sucesso', 'gps'].includes(passo) && (
           <div className="flex justify-center mb-6">
-            <img src="/logo.png" alt="JJ Teixeira" className="h-20 object-contain" />
+            <img 
+              src="/LOGOPONTO.png" 
+              alt="JJT Ponto" 
+              className="w-24 h-24 object-cover rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.5)] border border-gray-700" 
+            />
           </div>
         )}
 
