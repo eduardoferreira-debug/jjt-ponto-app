@@ -4,7 +4,6 @@ import {
   MapPin,
   CheckCircle,
   AlertTriangle,
-  Clock,
   ArrowRight,
   User,
   Camera,
@@ -227,9 +226,7 @@ export default function App() {
       <div className="max-w-sm w-full bg-[#111827] rounded-3xl shadow-2xl border border-gray-800 p-8 overflow-hidden relative">
         {['identificacao', 'sucesso', 'gps'].includes(passo) && (
           <div className="flex justify-center mb-6">
-            <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-500/30">
-              <Clock className="text-white" size={32} />
-            </div>
+            <img src="/logo.png" alt="JJ Teixeira" className="h-20 object-contain" />
           </div>
         )}
 
